@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pythonのまなびかた</title>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+  </head>
+  <body style='display: none'>
+    
+  <div class="section" id="python">
+<h1>Pythonのまなびかた<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h1>
+<p>Masashi Shibata  <cite>&#64;c_bata_</cite></p>
+<p>Python 入門者の集い #3</p>
+<p>2016/08/31 (水)</p>
+<div class="section" id="id1">
+<h2>自己紹介<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/icon.png" src="_images/icon.png" />
+<ul class="simple">
+<li>芝田 将</li>
+<li>Twitter: <a class="reference external" href="https://twitter.com/c_bata_">&#64;c_bata_</a> , Github: <a class="reference external" href="https://github.com/c-bata/">&#64;c-bata</a></li>
+<li>明石高専 (一応、関西在住)</li>
+<li>Python歴は3年くらい</li>
+<li>PyCon JP 2015, 2016スタッフ</li>
+<li>スマートフォンのセキュリティに関する研究</li>
+<li>カレーメシ先輩って呼ばれてます</li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>宣伝<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><dl class="first docutils">
+<dt><a class="reference external" href="http://gihyo.jp/news/report/01/pycon-apac2016">PyCon APAC 2016 in Korea 参加レポート</a></dt>
+<dd><ul class="first last simple">
+<li>2週間ほど前に韓国行ってきました (&#64;a_macbeeさんも)</li>
+<li>連載第2回が今朝公開されました :)</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><a class="reference external" href="https://pycon.jp/2016/ja/schedule/presentation/14/">基礎から学ぶWebアプリケーションフレームワークの作り方</a></dt>
+<dd><ul class="first last simple">
+<li>PyCon JP 2016で登壇します</li>
+<li>難易度はWebアプリを開発したことがある、中級者向け</li>
+<li>ぜひそれまでにFlaskとかDjangoを触ってみてください :)</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h2>今日話すこと<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>&#64;takanory「自分はこういう風にPythonやってきたよっていうのを話してきて」</li>
+<li>技術的に難しい話はしないので、気楽に :)</li>
+<li>ぼくのこれまでやってきたことと、その中で大事だなと感じた 「アウトプット」「コミュニティ活動」 の話</li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h2>c-bata のこれまで<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id6">
+<h2>3年前<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">内容良くわからないのにずっとはてぶのホットエントリを眺めていた</p>
+</li>
+<li><p class="first">CとかJava以外を勉強してみよう</p>
+</li>
+<li><dl class="first docutils">
+<dt>漠然とデータ分析もWebアプリにも興味を持ってる</dt>
+<dd><ul class="first last simple">
+<li>Python がいいらしい</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">ブログはなんかいいらしいので書いてみよう</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h2>実際にはじめたこと<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>当時のブログ記事によると</p>
+<ul class="simple">
+<li>基本的なPythonの文法とか、調べたことをまとめただけ</li>
+<li>Raspberry Pi + Arduinoでエアコンの遠隔制御</li>
+<li>Flask / SQLAlchemyを使ってWebアプリの開発</li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h2>反響が出だした<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">続けてたらブログのアクセス数が増えていった</p>
+</li>
+<li><p class="first">たまにはてブのつくエントリが出てきた</p>
+</li>
+<li><dl class="first docutils">
+<dt>2年前に書いた「Pythonでつくる検索エンジン」がバズった</dt>
+<dd><ul class="first last simple">
+<li>憧れのホッテントリ入り。はてぶが400を超えた</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Twitterのフォロワーが増えだした</p>
+</li>
+</ul>
+</div>
+<div class="section" id="beproud">
+<h2>BeProudでアルバイト<a class="headerlink" href="#beproud" title="Permalink to this headline">¶</a></h2>
+<p>そろそろアルバイトとかも出来るんじゃないかな...</p>
+<p>当時読んでいた本の著者の多くがBePROUDって会社にいるらしい。</p>
+<p>春休みに飛び込んでアルバイト</p>
+<ul>
+<li><p class="first">一人で勉強してるとこのやり方でいいのかなって不安だったけど解消された</p>
+</li>
+<li><p class="first">業務で使われているコードに触れ始めた</p>
+</li>
+<li><dl class="first docutils">
+<dt>Pythonに詳しい人達と知り合いになった</dt>
+<dd><ul class="first last simple">
+<li>何かわからないことあっても聞ける安心感</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>1ヶ月の新宿ホテル生活でお金がみるみるとんでいった</p>
+</div>
+<div class="section" id="id9">
+<h2>色んな勉強会に参加<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>春休みを使って色んなPythonの勉強会に参加</li>
+<li>色んな知り合いができて、勉強会の参加も緊張しなくなってきた</li>
+<li>PyCon JP 2015のスタッフも始めた</li>
+</ul>
+</div>
+<div class="section" id="pycon-apac-taiwan-pycon-jplt">
+<h2>PyCon APAC/Taiwan, PyCon JPでLT<a class="headerlink" href="#pycon-apac-taiwan-pycon-jplt" title="Permalink to this headline">¶</a></h2>
+<p>aodagさん「今年はどこのPyConに行くんだい？」</p>
+<p>BeProudのすごい人達と関わりが出来てきて、自分のやってることってそんなにしょぼいものばかりではないんじゃないかなって自信がついてきた。</p>
+<p>研究のために使ってたpandasのvalidationライブラリを公開・PyCon JP 2015でLT発表。</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/c-bata/pandas-validator">pandas-validator</a></li>
+</ul>
+<p>PyConへのイメージが結構変わる</p>
+</div>
+<div class="section" id="id10">
+<h2>最近<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><dl class="first docutils">
+<dt>PyCon APAC 2016 in Korea で、自分のつくったフレームワークを紹介</dt>
+<dd><ul class="first last simple">
+<li>今朝、gihyo.jp 参加レポート第2回が公開されました</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Flaskで受託開発、Djangoでサービス開発</p>
+</li>
+<li><dl class="first docutils">
+<dt>気になるライブラリをウォッチ。(Django REST FrameworkとかSwaggerまわり)</dt>
+<dd><ul class="first last simple">
+<li>週に何回かIssue, PRを送るようになる</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="id11">
+<h2>大事だなと思ったこと<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id12">
+<h2>大事だなと思ったこと<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<p>Pythonの勉強に大事だったなと思うことが2つ</p>
+<ul class="simple">
+<li>アウトプット</li>
+<li>コミュニティ活動</li>
+</ul>
+</div>
+<div class="section" id="id13">
+<h2>アウトプット<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><dl class="first docutils">
+<dt>ブログを書く</dt>
+<dd><ul class="first last simple">
+<li>調べた内容でもいいので一番はじめるのが簡単</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Pythonを使ってなにかやってみる。公開する</dt>
+<dd><ul class="first last simple">
+<li>Webアプリ</li>
+<li>Pythonのライブラリ</li>
+<li>実際のデータを使って何か出してみる</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">勉強会やカンファレンスで話す</p>
+</li>
+</ul>
+</div>
+<div class="section" id="c-bata-web">
+<h2>c-bata web<a class="headerlink" href="#c-bata-web" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="_images/c-bataweb.png"><img alt="_images/c-bataweb.png" src="_images/c-bataweb.png" style="width: 900px;" /></a>
+</div>
+<div class="section" id="id14">
+<h2>技術レベル ≠ 需要<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><dl class="first docutils">
+<dt>最初の頃「自分の勉強してる基本的な知識なんて全然需要ないよなぁ...」</dt>
+<dd><ul class="first last simple">
+<li>今思うと、一番ダメなパターン</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>公開せずにローカルに置いてたメモは必ずどっかいく</dt>
+<dd><ul class="first last simple">
+<li>無くなったら記憶もどっかいく</li>
+<li>自分はRubyとかPHPをやってたことがあるらしい...</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>ブログは勉強し始めほど書いてみる。</p>
+<p>ボクの場合、いまだにこれまでで一番伸びた記事は2年前のもの</p>
+</div>
+<div class="section" id="id15">
+<h2>コミュニティ活動<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<p>メリット</p>
+<ul>
+<li><dl class="first docutils">
+<dt>何か始めるときの敷居がどんどん下がっていく</dt>
+<dd><ul class="first last simple">
+<li>PyConでの登壇</li>
+<li>海外のPyConへの参加</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>自分だけでは無理だった機会が訪れる</dt>
+<dd><ul class="first last simple">
+<li>gihyo.jp での連載</li>
+<li>Python入門者の集い #3</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="id16">
+<h2>コミュニティ活動とは？<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+<p>コミュニティって言葉が漠然としていて、分かりづらいかも。何でもいい。
+知り合いを増やす。</p>
+<ul>
+<li><p class="first">githubとかtwitterみたいなSNS</p>
+</li>
+<li><p class="first">勉強会・PyCon JP</p>
+</li>
+<li><dl class="first docutils">
+<dt>ここはみなさんもう始めてる</dt>
+<dd><ul class="first last simple">
+<li>懇親会に生ビールがでる素晴らしいイベントです</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="id17">
+<h2>まとめ<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><dl class="first docutils">
+<dt>アウトプットをしよう</dt>
+<dd><ul class="first last simple">
+<li>技術レベル ≠ 需要</li>
+<li>ブログ大事</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>コミュニティ活動しよう</dt>
+<dd><ul class="first last simple">
+<li>Pythonistaとつながろう (懇親会 🍻 )</li>
+<li>PyCon JP 2016行く方はよろしくお願いします :)</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="id18">
+<h2>懇親会よろしくお願いします 🍻<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+  <div id="help">
+      Use the left and right arrow keys or click the left and right
+      edges of the page to navigate between slides.<br>
+      (Press 'H' or navigate to hide this message.)
+  </div>
+  </body>
+  <script type="text/javascript" src="_static/js/initialize.js"></script>
+  <script type="text/javascript" src="_static/js/slides.js"></script>
+</html>
